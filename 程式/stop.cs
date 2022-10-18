@@ -14,7 +14,7 @@ public class stop : MonoBehaviour
     void Start()
     {
         ATK.sizeDelta = new Vector2((GameData.damage-1.0f)*250, ATK.sizeDelta.y);
-        DEF.sizeDelta = new Vector2(GameData.def*10, DEF.sizeDelta.y);
+        DEF.sizeDelta = new Vector2(GameData.def*8.33f, DEF.sizeDelta.y);
         DIS.sizeDelta = new Vector2((GameData.bulletLife-0.3f)*1000, DIS.sizeDelta.y);
         atk.onClick.AddListener(_atk);
         def.onClick.AddListener(_def);

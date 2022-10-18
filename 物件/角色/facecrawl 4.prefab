@@ -410,7 +410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathAnim: {fileID: 1490239692820235266, guid: e30599b5e2eb14b4089db942c62acabb, type: 3}
   heartDrop: {fileID: 4586578677278417203, guid: 9a2fe1da9d6147640b6fa841982343c1, type: 3}
-  health: 12
+  health: 8
   hurtSound: {fileID: 8300000, guid: d28ec7656245c924b92c9e81b843df38, type: 3}
 --- !u!114 &7147153665854007752
 MonoBehaviour:
