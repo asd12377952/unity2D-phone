@@ -4,20 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-
-public class restart : MonoBehaviour
+public class go : MonoBehaviour
 {
-
-    public Button AD;
-    public GameObject go;
-    public GameObject UI;
     private Button Btn;
     // Start is called before the first frame update
     void Start()
     {
+        gameObject.SetActive(false);
         Btn = GetComponent<Button>();
-        Btn.onClick.AddListener(RestartGame);
-        AD.onClick.AddListener(watchAD);
+        Btn.onClick.AddListener(_go);
     }
 
     // Update is called once per frame
@@ -25,16 +20,10 @@ public class restart : MonoBehaviour
     {
         
     }
-    void RestartGame()
-    {
-        SceneManager.LoadScene("menu");
-    }
-    void watchAD()
-    {
+    void _go(){
         GameData.hp = 250;
 		GameData.exp = 0;
-        GameData.score=20;
-        go.gameObject.SetActive(true);
-        UI.gameObject.SetActive(false);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1;
     }
 }

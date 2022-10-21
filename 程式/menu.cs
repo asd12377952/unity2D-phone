@@ -31,7 +31,7 @@ public class menu : MonoBehaviour {
 		GameData.point = 1;
 		GameData.exppoint = 15;
 		GameData.bosslevel = false;
-		GameData.score = 100;
+		GameData.score = 0;
 		SceneManager.LoadScene("level1");
 	}
 	
