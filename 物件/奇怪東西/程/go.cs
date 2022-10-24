@@ -21,8 +21,6 @@ public class go : MonoBehaviour
         
     }
     void _go(){
-        GameData.hp = 250;
-		GameData.exp = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1;
     }
